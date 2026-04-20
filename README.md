@@ -6,7 +6,9 @@ This is basically a learning-based project. In it, I will try to build a server 
 
 Steps to install and set up the project.
 
-1. Setup a NodeJs project first \
+### Node.js Project
+
+1. Setup a NodeJs project first
     ```bash
     npm init -y
     ```
@@ -14,7 +16,7 @@ Steps to install and set up the project.
     ```bash
     console.log("Hello, World!");
     ```
-3. Configure the package.json file\
+3. Configure the package.json file
     ```bash
     "scripts": {
         "start": "node index.js"
@@ -29,6 +31,34 @@ Steps to install and set up the project.
     It will return into terminal: `Hello, World!`
 
 Congratulation! Nodejs project is setup done.
+
+### Setup Express.js
+
+1. `npm i express`
+2. Check your Node.js version and set that into your package.json file
+    ```bash
+    "engines": {
+        "node": "22.19.0"
+    }
+    ```
+
+## Creating Server
+
+Create server through index.js file. Example codes are bellow
+
+### Common js
+
+```bash
+const express = require("express");
+
+// Create an instance of the Express application
+const app = express();
+
+// Listen your app on a specific server port (e.g., 4000)
+app.listen("4000", () => {
+	console.log("Server is running on port 4000");
+});
+```
 
 ## Usage
 
